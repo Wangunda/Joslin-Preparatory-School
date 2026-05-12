@@ -1,0 +1,17 @@
+{
+  "title": "Baby Nest",
+  "ageRange": "3\u201312 months",
+  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "meals": true,
+  "ratio": "1 : 4",
+  "fees": "KES 18,000 \u2013 22,000 / month",
+  "description": "Sensory play, bonding activities, sleep and feeding routines.",
+  "activities": [
+    "Sensory and tummy-time play",
+    "Bonding & responsive caregiving",
+    "Sleep & feeding routines",
+    "Music and lullaby time"
+  ],
+  "image": "/src/assets/children-mealtime.jpg",
+  "order": 1
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Wobbler Class",
+  "ageRange": "1\u20132 years",
+  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "meals": true,
+  "ratio": "1 : 6",
+  "fees": "KES 17,000 \u2013 21,000 / month",
+  "description": "Walking, talking, and first friendships through discovery play.",
+  "activities": [
+    "Walking and climbing play",
+    "Early language games",
+    "Messy art & water play",
+    "First friendships"
+  ],
+  "image": "/src/assets/children-classroom.jpg",
+  "order": 2
+}

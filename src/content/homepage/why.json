@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "icon": "Sparkles",
+      "title": "Play-Based Learning",
+      "description": "Children learn best through play, exploration, and joyful discovery in a structured environment."
+    },
+    {
+      "icon": "BookOpen",
+      "title": "CBC Aligned Curriculum",
+      "description": "We follow Kenya's Competency Based Curriculum for holistic, future-ready child development."
+    },
+    {
+      "icon": "Users",
+      "title": "Caring Kenyan Educators",
+      "description": "Our teachers hold ECD certificates from accredited Kenyan institutions and treat every child like family."
+    }
+  ]
+}

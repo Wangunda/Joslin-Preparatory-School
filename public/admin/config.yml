@@ -1,0 +1,152 @@
+# Decap CMS configuration for Joslin Preparatory School
+# IMPORTANT: replace YOUR_GH_USER/YOUR_REPO with your GitHub repo, and set up
+# an OAuth provider (e.g. https://github.com/vencax/netlify-cms-github-oauth-provider
+# deployed to Cloudflare Workers / Vercel). Set base_url + auth_endpoint below.
+backend:
+  name: github
+  repo: YOUR_GH_USER/YOUR_REPO
+  branch: main
+  # base_url: https://your-oauth-proxy.example.com
+  # auth_endpoint: auth
+
+# Uncomment for local editing (run `npx decap-server` then visit /admin)
+# local_backend: true
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+site_url: https://joslinprep.ac.ke
+display_url: https://joslinprep.ac.ke
+logo_url: /images/uploads/toto-nest-logo.png
+
+collections:
+  - name: homepage
+    label: Homepage
+    files:
+      - name: hero
+        label: Hero Section
+        file: src/content/homepage/hero.json
+        fields:
+          - { label: Headline, name: headline, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - { label: Primary Button Text, name: primaryBtn, widget: string }
+          - { label: Secondary Button Text, name: secondaryBtn, widget: string }
+          - { label: Hero Image, name: heroImage, widget: image }
+      - name: stats
+        label: Trust Stats Bar
+        file: src/content/homepage/stats.json
+        fields:
+          - label: Stats
+            name: stats
+            widget: list
+            fields:
+              - { label: Number or Value, name: value, widget: string }
+              - { label: Label, name: label, widget: string }
+      - name: why_choose_us
+        label: Why Choose Us
+        file: src/content/homepage/why.json
+        fields:
+          - label: Cards
+            name: cards
+            widget: list
+            fields:
+              - { label: Icon (Sparkles, BookOpen, Users, Star), name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+      - name: cta_banner
+        label: Call to Action Banner
+        file: src/content/homepage/cta.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subtext, name: subtext, widget: string }
+          - { label: Button Text, name: buttonText, widget: string }
+
+  - name: programs
+    label: Programs
+    folder: src/content/programs
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Program Name, name: title, widget: string }
+      - { label: Age Range, name: ageRange, widget: string }
+      - { label: Daily Hours, name: hours, widget: string }
+      - { label: Meals Included, name: meals, widget: boolean }
+      - { label: Teacher to Child Ratio, name: ratio, widget: string }
+      - { label: Monthly Fee Range (KES), name: fees, widget: string }
+      - { label: Program Description, name: description, widget: text }
+      - { label: Key Activities, name: activities, widget: list }
+      - { label: Program Image, name: image, widget: image }
+      - { label: Display Order, name: order, widget: number }
+
+  - name: testimonials
+    label: Testimonials
+    folder: src/content/testimonials
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Parent Name, name: name, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Quote, name: quote, widget: text }
+      - { label: Star Rating (1-5), name: rating, widget: number, min: 1, max: 5, default: 5 }
+      - { label: Active (show on site), name: active, widget: boolean, default: true }
+
+  - name: gallery
+    label: Gallery
+    folder: src/content/gallery
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Photo Title, name: title, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Category, name: category, widget: select, options: [Classroom, Outdoor Play, Arts and Crafts, Events] }
+      - { label: Alt Text, name: alt, widget: string }
+
+  - name: team
+    label: Team Members
+    folder: src/content/team
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Full Name, name: name, widget: string }
+      - { label: Job Title, name: title, widget: string }
+      - { label: Bio, name: bio, widget: text }
+      - { label: Photo, name: photo, widget: image }
+      - { label: Display Order, name: order, widget: number }
+
+  - name: faqs
+    label: FAQs (Admissions Page)
+    folder: src/content/faqs
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Question, name: question, widget: string }
+      - { label: Answer, name: answer, widget: text }
+      - { label: Display Order, name: order, widget: number }
+
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: src/content/settings/general.json
+        fields:
+          - { label: School Name, name: schoolName, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Phone Number, name: phone, widget: string }
+          - { label: Email Address, name: email, widget: string }
+          - { label: Physical Address, name: address, widget: string }
+          - { label: WhatsApp Number (with country code, no +), name: whatsapp, widget: string }
+          - { label: Instagram Handle, name: instagram, widget: string }
+          - { label: Facebook Page URL, name: facebook, widget: string }
+          - { label: Registration Fee (KES), name: regFee, widget: string }
+          - { label: Admissions Open (show banner), name: admissionsOpen, widget: boolean, default: true }

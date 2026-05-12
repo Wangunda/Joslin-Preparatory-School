@@ -1,0 +1,17 @@
+{
+  "title": "Pre-Primary 1",
+  "ageRange": "3\u20134 years",
+  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "meals": true,
+  "ratio": "1 : 8",
+  "fees": "KES 18,000 \u2013 23,000 / month",
+  "description": "Creative arts, storytelling, and numeracy foundations.",
+  "activities": [
+    "Storytelling & phonics",
+    "Numeracy foundations",
+    "Creative arts & music",
+    "Outdoor discovery"
+  ],
+  "image": "/src/assets/school-mural.jpg",
+  "order": 3
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Pre-Primary 2",
+  "ageRange": "5\u20136 years",
+  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "meals": true,
+  "ratio": "1 : 10",
+  "fees": "KES 20,000 \u2013 25,000 / month",
+  "description": "CBC PP2 curriculum, reading readiness, and STEM play.",
+  "activities": [
+    "CBC PP2 curriculum",
+    "Reading & writing readiness",
+    "STEM play & coding basics",
+    "Kiswahili and English"
+  ],
+  "image": "/src/assets/school-numbers.jpg",
+  "order": 4
+}
