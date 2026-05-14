@@ -8,6 +8,7 @@ const links = [
   { to: "/about", label: "About" },
   { to: "/programs", label: "Programs" },
   { to: "/admissions", label: "Admissions" },
+  { to: "/donations", label: "Donations" },
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -15,6 +16,7 @@ const links = [
 export function Nav() {
   const [open, setOpen] = useState(false);
   const currentPath = useCurrentPath();
+
   return (
     <header className="sticky top-0 z-40 w-full border-b border-brand-border bg-brand-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
@@ -44,6 +46,12 @@ export function Nav() {
             </Link>
           ))}
           <Link
+            to="/donations"
+            className="rounded-full border border-brand-red px-5 py-2 text-sm font-semibold text-brand-red transition-colors hover:bg-brand-red hover:text-brand-white"
+          >
+            Donate
+          </Link>
+          <Link
             to="/admissions"
             className="rounded-full bg-brand-red px-5 py-2 text-sm font-semibold text-brand-white transition-transform hover:scale-105"
           >
@@ -53,7 +61,7 @@ export function Nav() {
         <button
           onClick={() => setOpen(!open)}
           aria-label="Menu"
-          className="md:hidden text-brand-black"
+          className="text-brand-black md:hidden"
         >
           {open ? <X /> : <Menu />}
         </button>
@@ -73,6 +81,13 @@ export function Nav() {
                 {l.label}
               </Link>
             ))}
+            <Link
+              to="/donations"
+              onClick={() => setOpen(false)}
+              className="mt-2 rounded-full border border-brand-red px-5 py-2 text-center text-sm font-semibold text-brand-red"
+            >
+              Donate
+            </Link>
             <Link
               to="/admissions"
               onClick={() => setOpen(false)}

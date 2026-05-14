@@ -2,6 +2,7 @@ import AboutPage, { pageMeta as aboutMeta } from "./routes/about";
 import AccessibilityPage, { pageMeta as accessibilityMeta } from "./routes/accessibility";
 import AdmissionsPage, { pageMeta as admissionsMeta } from "./routes/admissions";
 import ContactPage, { pageMeta as contactMeta } from "./routes/contact";
+import DonationsPage, { pageMeta as donationsMeta } from "./routes/donations";
 import GalleryPage, { pageMeta as galleryMeta } from "./routes/gallery";
 import HomePage, { pageMeta as homeMeta } from "./routes/index";
 import PrivacyPage, { pageMeta as privacyMeta } from "./routes/privacy";
@@ -21,6 +22,7 @@ const routes: RouteDefinition[] = [
   { path: "/about", component: AboutPage, meta: aboutMeta },
   { path: "/programs", component: ProgramsPage, meta: programsMeta },
   { path: "/admissions", component: AdmissionsPage, meta: admissionsMeta },
+  { path: "/donations", component: DonationsPage, meta: donationsMeta },
   { path: "/gallery", component: GalleryPage, meta: galleryMeta },
   { path: "/contact", component: ContactPage, meta: contactMeta },
   { path: "/privacy", component: PrivacyPage, meta: privacyMeta },
@@ -29,9 +31,9 @@ const routes: RouteDefinition[] = [
 ];
 
 const notFoundMeta: PageMeta = {
-  title: "Page Not Found — Joslin Preparatory School",
+  title: "Page Not Found - Joslin Preparatory School",
   description: "The page you're looking for doesn't exist or has been moved.",
-  ogTitle: "Page Not Found — Joslin Preparatory School",
+  ogTitle: "Page Not Found - Joslin Preparatory School",
   ogDescription: "The page you're looking for doesn't exist or has been moved.",
 };
 

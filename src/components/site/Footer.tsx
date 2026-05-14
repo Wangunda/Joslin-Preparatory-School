@@ -38,6 +38,7 @@ export function Footer() {
               { to: "/about", l: "About" },
               { to: "/programs", l: "Programs" },
               { to: "/admissions", l: "Admissions" },
+              { to: "/donations", l: "Donations" },
               { to: "/gallery", l: "Gallery" },
               { to: "/contact", l: "Contact" },
             ].map((i) => (
@@ -62,14 +63,16 @@ export function Footer() {
               <Mail className="mt-0.5 h-4 w-4 text-brand-red" /> {settings.email}
             </li>
             <li className="flex gap-3">
-              <Clock className="mt-0.5 h-4 w-4 text-brand-red" /> Mon–Fri 7am–5:30pm
+              <Clock className="mt-0.5 h-4 w-4 text-brand-red" /> Mon-Fri 7am-5:30pm
             </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Joslin Preparatory School. All rights reserved.</p>
+          <p>
+            Copyright {new Date().getFullYear()} Joslin Preparatory School. All rights reserved.
+          </p>
           <div className="flex flex-wrap gap-x-5 gap-y-1">
             <Link to="/privacy" className="hover:text-brand-red">
               Privacy

@@ -28,7 +28,7 @@ export function CookieConsent() {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-end justify-center bg-brand-black/40 px-4 pb-4 sm:items-center sm:pb-0">
+    <div className="fixed inset-0 z-[60] flex items-end justify-center bg-brand-black/40 px-4 pb-4">
       <div className="w-full max-w-2xl rounded-2xl border border-brand-border bg-brand-white p-6 shadow-2xl sm:p-8">
         <div className="flex items-start gap-4">
           <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-brand-red/10 text-brand-red">
