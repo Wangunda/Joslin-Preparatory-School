@@ -59,7 +59,7 @@ export default function Index() {
               {hero.primaryBtn}
             </Link>
             <Link
-              to="/gallery"
+              to="/admissions"
               className="rounded-full border-2 border-brand-white px-7 py-3.5 text-sm font-semibold text-brand-white transition-colors hover:bg-brand-white hover:text-brand-black"
             >
               {hero.secondaryBtn}

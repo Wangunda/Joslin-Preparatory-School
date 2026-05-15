@@ -112,7 +112,7 @@ export default function ContactPage() {
             <iframe
               title="Joslin Preparatory School location"
               className="h-[400px] w-full"
-              src="https://www.google.com/maps?q=-1.2921,36.8219&z=14&output=embed"
+              src="https://www.google.com/maps?q=Bondo,Siaya,Kenya&z=14&output=embed"
               loading="lazy"
             />
           </div>

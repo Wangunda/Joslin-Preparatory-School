@@ -1,17 +1,12 @@
 {
   "title": "Pre-Primary 2",
-  "ageRange": "5\u20136 years",
-  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "ageRange": "5-6 years",
+  "hours": "Monday-Friday, 7:30 AM-4:30 PM",
   "meals": true,
-  "ratio": "1 : 10",
-  "fees": "KES 20,000 \u2013 25,000 / month",
-  "description": "CBC PP2 curriculum, reading readiness, and STEM play.",
-  "activities": [
-    "CBC PP2 curriculum",
-    "Reading & writing readiness",
-    "STEM play & coding basics",
-    "Kiswahili and English"
-  ],
-  "image": "/src/assets/school-numbers.jpg",
+  "ratio": "1:10",
+  "fees": "Fee structure available upon request",
+  "description": "Strong preparation for primary school with literacy, numeracy, confidence-building, and hands-on discovery.",
+  "activities": ["Reading readiness", "Creative writing", "Math games", "Science discovery", "Outdoor sports"],
+  "image": "/src/assets/program-pp2.jpg",
   "order": 4
 }

@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { type PageMeta } from "@/lib/seo";
 
 export const pageMeta: PageMeta = {
-  title: "Terms of Service — Joslin Preparatory School",
+  title: "Terms of Service - Joslin Preparatory School",
   description: "Terms governing enrollment and use of the Joslin Preparatory School website.",
   canonicalPath: "/terms",
 };
@@ -28,8 +28,8 @@ export default function TermsPage() {
 
           <h2 className="font-display text-2xl font-bold">2. Fees</h2>
           <p>
-            Fees are payable termly in advance. Late payments attract a 5% surcharge after 14 days.
-            Fees are reviewed annually with one term&apos;s notice.
+            Fee details are shared upon request by the school office and may be updated from time to
+            time.
           </p>
 
           <h2 className="font-display text-2xl font-bold">3. Withdrawal</h2>
@@ -64,7 +64,7 @@ export default function TermsPage() {
           </p>
 
           <h2 className="font-display text-2xl font-bold">8. Contact</h2>
-          <p>hello@joslinprep.ac.ke · +254 700 000 000</p>
+          <p>hello@joslinprep.ac.ke · 0712006462</p>
         </div>
       </article>
     </SiteLayout>

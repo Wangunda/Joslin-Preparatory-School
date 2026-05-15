@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { type PageMeta } from "@/lib/seo";
 
 export const pageMeta: PageMeta = {
-  title: "Privacy Policy — Joslin Preparatory School",
+  title: "Privacy Policy - Joslin Preparatory School",
   description: "How Joslin Preparatory School collects, uses, and protects family information.",
   canonicalPath: "/privacy",
 };
@@ -62,9 +62,7 @@ export default function PrivacyPage() {
           </p>
 
           <h2 className="font-display text-2xl font-bold">6. Contact</h2>
-          <p>
-            Data Protection Officer — privacy@joslinprep.ac.ke · +254 700 000 000 · Bondo, Siaya.
-          </p>
+          <p>Data Protection Officer - privacy@joslinprep.ac.ke · 0712006462 · Bondo, Siaya.</p>
         </div>
       </article>
     </SiteLayout>

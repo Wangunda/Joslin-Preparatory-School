@@ -6,11 +6,11 @@ import { CheckCircle2, ChevronDown } from "lucide-react";
 import { type PageMeta } from "@/lib/seo";
 
 export const pageMeta: PageMeta = {
-  title: "Admissions — Apply to Joslin Preparatory School Bondo",
+  title: "Admissions - Apply to Joslin Preparatory School Bondo",
   description:
     "Apply for a place at Joslin Preparatory School. Simple 4-step admissions process for Bondo families.",
   ogTitle: "Joslin Preparatory School Admissions",
-  ogDescription: "Enquire, tour, apply and enrol — admissions are open.",
+  ogDescription: "Enquire, tour, apply and enrol - admissions are open.",
   canonicalPath: "/admissions",
 };
 
@@ -18,17 +18,21 @@ const steps = [
   { n: 1, t: "Enquire", d: "Reach out via WhatsApp, email or phone. We'll answer your questions." },
   { n: 2, t: "Book a Tour", d: "Visit the school and meet our educators in person." },
   { n: 3, t: "Submit Application", d: "Complete the form below with your child's details." },
-  { n: 4, t: "Enrolment", d: "Pay the registration fee and welcome to the family." },
+  {
+    n: 4,
+    t: "Enrolment",
+    d: "Receive the fee structure on request and complete enrolment with the school office.",
+  },
 ];
 
 const faqs = [
   {
     q: "What is the daily school schedule?",
-    a: "Our day runs Mon–Fri 7:30 AM to 4:30 PM, with structured learning, play, meals and rest woven into every day.",
+    a: "Our day runs Mon-Fri 7:30 AM to 4:30 PM, with structured learning, play, meals and rest woven into every day.",
   },
   {
     q: "Do you provide meals and snacks?",
-    a: "Yes — three nutritious meals plus snacks daily, prepared on-site by our trained kitchen staff.",
+    a: "Yes - three nutritious meals plus snacks daily, prepared on-site by our trained kitchen staff.",
   },
   {
     q: "Is the school CBC accredited?",
@@ -39,8 +43,8 @@ const faqs = [
     a: "English and Kiswahili side by side from baby class onwards.",
   },
   {
-    q: "How do I pay school fees?",
-    a: "Fees are accepted via M-Pesa, bank transfer or cheque. Termly and monthly options available.",
+    q: "How do I get the fee structure?",
+    a: "The fee structure is available upon request. Please contact the school office by phone, WhatsApp, or email and we will share the current details with you.",
   },
   {
     q: "Is there a waiting list?",
@@ -88,7 +92,7 @@ export default function AdmissionsPage() {
                 <div className="mt-8 flex flex-col items-center gap-3 border border-brand-border bg-brand-surface p-10 text-center">
                   <CheckCircle2 className="h-12 w-12 text-brand-red" />
                   <p className="font-display text-xl font-bold text-brand-black">Thank you!</p>
-                  <p className="text-brand-muted">We&apos;ll be in touch within 24 hours.</p>
+                  <p className="text-brand-muted">We'll be in touch within 24 hours.</p>
                 </div>
               ) : (
                 <form
@@ -126,10 +130,10 @@ export default function AdmissionsPage() {
                       className="mt-2 w-full border border-brand-border bg-brand-white px-4 py-3 outline-none focus:border-brand-red"
                     >
                       <option value="">Select a program</option>
-                      <option>Baby Nest (3–12 months)</option>
-                      <option>Wobbler Class (1–2 years)</option>
-                      <option>Pre-Primary 1 (3–4 years)</option>
-                      <option>Pre-Primary 2 (5–6 years)</option>
+                      <option>Baby Nest (3-12 months)</option>
+                      <option>Wobbler Class (1-2 years)</option>
+                      <option>Pre-Primary 1 (3-4 years)</option>
+                      <option>Pre-Primary 2 (5-6 years)</option>
                     </select>
                   </div>
                   <div>
@@ -155,30 +159,21 @@ export default function AdmissionsPage() {
       </section>
 
       <section className="bg-brand-white py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-4xl px-6">
           <Reveal>
-            <h2 className="font-display text-4xl font-bold text-brand-black">Fees</h2>
+            <div className="border border-brand-black bg-brand-white p-8 text-center md:p-12">
+              <p className="text-sm font-semibold uppercase tracking-widest text-brand-red">
+                Fee Structure
+              </p>
+              <h2 className="mt-3 font-display text-4xl font-bold text-brand-black">
+                Available Upon Request
+              </h2>
+              <p className="mt-4 text-brand-muted">
+                Please contact the school office by phone, WhatsApp, or email to receive the current
+                fee structure and payment guidance.
+              </p>
+            </div>
           </Reveal>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[
-              { t: "Registration Fee", p: "KES 5,000", s: "One-time" },
-              { t: "Monthly Tuition", p: "KES 15,000 – 25,000", s: "Per program" },
-              { t: "Uniform & Supplies", p: "KES 3,500", s: "Per term" },
-            ].map((c, i) => (
-              <Reveal key={c.t} delay={i * 0.1}>
-                <div className="border border-brand-black bg-brand-white p-7">
-                  <p className="text-sm font-semibold uppercase tracking-wider text-brand-muted">
-                    {c.t}
-                  </p>
-                  <p className="mt-3 font-display text-3xl font-bold text-brand-red">{c.p}</p>
-                  <p className="mt-1 text-sm text-brand-muted">{c.s}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <p className="mt-6 text-sm text-brand-muted">
-            Fees accepted via M-Pesa, bank transfer, or cheque. A 5% sibling discount applies.
-          </p>
         </div>
       </section>
 

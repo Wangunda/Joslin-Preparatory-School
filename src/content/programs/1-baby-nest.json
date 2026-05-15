@@ -1,17 +1,12 @@
 {
   "title": "Baby Nest",
-  "ageRange": "3\u201312 months",
-  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "ageRange": "3-12 months",
+  "hours": "Monday-Friday, 7:30 AM-4:30 PM",
   "meals": true,
-  "ratio": "1 : 4",
-  "fees": "KES 18,000 \u2013 22,000 / month",
-  "description": "Sensory play, bonding activities, sleep and feeding routines.",
-  "activities": [
-    "Sensory and tummy-time play",
-    "Bonding & responsive caregiving",
-    "Sleep & feeding routines",
-    "Music and lullaby time"
-  ],
-  "image": "/src/assets/children-mealtime.jpg",
+  "ratio": "1:4",
+  "fees": "Fee structure available upon request",
+  "description": "A warm, secure environment for infants focused on early sensory development, bonding, rest, and responsive care.",
+  "activities": ["Tummy time", "Music and rhythm", "Sensory play", "Feeding and naps", "Outdoor fresh-air strolls"],
+  "image": "/src/assets/program-baby.jpg",
   "order": 1
 }

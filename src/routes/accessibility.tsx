@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { type PageMeta } from "@/lib/seo";
 
 export const pageMeta: PageMeta = {
-  title: "Accessibility — Joslin Preparatory School",
+  title: "Accessibility - Joslin Preparatory School",
   description: "Our commitment to digital and physical accessibility for every family.",
   canonicalPath: "/accessibility",
 };
@@ -16,7 +16,7 @@ export default function AccessibilityPage() {
         <p className="text-sm text-brand-muted">Last updated: 8 May 2026</p>
         <div className="mt-8 space-y-6 text-base leading-relaxed">
           <p>
-            Joslin Preparatory School is committed to making learning — and our website — accessible
+            Joslin Preparatory School is committed to making learning - and our website - accessible
             to every child, parent, and visitor regardless of ability.
           </p>
 
@@ -45,7 +45,7 @@ export default function AccessibilityPage() {
           <h2 className="font-display text-2xl font-bold">Feedback</h2>
           <p>
             If you encounter an accessibility barrier, please contact us at access@joslinprep.ac.ke
-            or +254 700 000 000. We aim to respond within 5 working days.
+            or 0712006462. We aim to respond within 5 working days.
           </p>
         </div>
       </article>

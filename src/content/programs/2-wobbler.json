@@ -1,17 +1,12 @@
 {
   "title": "Wobbler Class",
-  "ageRange": "1\u20132 years",
-  "hours": "Mon\u2013Fri, 7:30 AM \u2013 4:30 PM",
+  "ageRange": "1-2 years",
+  "hours": "Monday-Friday, 7:30 AM-4:30 PM",
   "meals": true,
-  "ratio": "1 : 6",
-  "fees": "KES 17,000 \u2013 21,000 / month",
-  "description": "Walking, talking, and first friendships through discovery play.",
-  "activities": [
-    "Walking and climbing play",
-    "Early language games",
-    "Messy art & water play",
-    "First friendships"
-  ],
-  "image": "/src/assets/children-classroom.jpg",
+  "ratio": "1:6",
+  "fees": "Fee structure available upon request",
+  "description": "For curious toddlers discovering language, movement, and routine through play, rhythm, and guided interaction.",
+  "activities": ["Sensory bins", "Gross motor play", "Language songs", "Messy art", "Story circle"],
+  "image": "/src/assets/program-wobbler.jpg",
   "order": 2
 }
